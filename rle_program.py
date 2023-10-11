@@ -1,6 +1,7 @@
 from console_gfx import ConsoleGfx
 #RLE image encoder gives the user multiple options to load images and display those images
 
+
 hex_num_to_string_array = {
     10:"a",
     11:"b",
@@ -35,7 +36,7 @@ def to_hex_string(data):
     for item in data:
         hex_string += number_to_hex_string(item)
     return hex_string
-
+#Displays the current raw (flat) data in hexadecimal representation (without delimiters)
 def to_flat_string(rle_data):
     hex_string = ""
     for i in range(0,len(rle_data),2):
